@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreelanceHub — Find the Right Talent for Your Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="freelancers.html">Find Freelancers</a></li>
+        <li><a href="jobs.html">Find Jobs</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <a href="register.html" class="btn btn-gold btn-sm">Sign Up</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">A marketplace built for real work</div>
+        <h1>Find the Right Talent for Your Project</h1>
+        <p class="hero-sub">
+          FreelanceHub connects clients with skilled freelancers across development,
+          design, writing and marketing — and helps freelancers find work that fits
+          their skills.
+        </p>
+
+        <form id="heroSearchForm" class="search-bar">
+          <input type="text" id="heroSearchInput" placeholder="Try 'React developer' or 'logo design'" />
+          <button type="submit" class="btn btn-gold">Search</button>
+        </form>
+
+        <div class="hero-actions">
+          <a href="freelancers.html" class="btn btn-primary">Hire a Freelancer</a>
+          <a href="jobs.html" class="btn btn-outline">Find Work</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>4,200+</strong><span>Freelancers</span></div>
+          <div><strong>1,800+</strong><span>Jobs posted</span></div>
+          <div><strong>96%</strong><span>Client satisfaction</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="ticket-card">
+          <div class="ticket-top">
+            <div class="avatar teal">AR</div>
+            <div>
+              <strong>Aisha R.</strong>
+              <span>UI/UX Designer · $32/hr</span>
+            </div>
+          </div>
+          <p style="margin-bottom:10px; font-size:0.85rem;">"Redesigned our checkout flow and conversions went up 18%."</p>
+          <span class="tag teal">Figma</span><span class="tag teal">Design Systems</span>
+        </div>
+        <div class="ticket-card">
+          <div class="ticket-top">
+            <div class="avatar gold">JT</div>
+            <div>
+              <strong>Job: Landing Page Build</strong>
+              <span>Budget: $250 – $400</span>
+            </div>
+          </div>
+          <p style="margin-bottom:10px; font-size:0.85rem;">Need a responsive landing page built from a Figma file.</p>
+          <span class="tag gold">HTML/CSS</span><span class="tag gold">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Popular Categories ===== -->
+  <section class="section container">
+    <div class="section-head">
+      <h2>Popular categories</h2>
+      <p>Browse the kind of work happening on FreelanceHub right now.</p>
+    </div>
+    <div class="category-grid">
+      <div class="category-card" data-category="web-development">
+        <div class="icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Websites, web apps and e-commerce builds.</p>
+      </div>
+      <div class="category-card" data-category="graphic-design">
+        <div class="icon">🎨</div>
+        <h3>Graphic Design</h3>
+        <p>Logos, branding kits and print design.</p>
+      </div>
+      <div class="category-card" data-category="content-writing">
+        <div class="icon">✍️</div>
+        <h3>Content Writing</h3>
+        <p>Blogs, copywriting and technical articles.</p>
+      </div>
+      <div class="category-card" data-category="ui-ux-design">
+        <div class="icon">🧩</div>
+        <h3>UI/UX Design</h3>
+        <p>Wireframes, prototypes and product design.</p>
+      </div>
+      <div class="category-card" data-category="digital-marketing">
+        <div class="icon">📈</div>
+        <h3>Digital Marketing</h3>
+        <p>SEO, social media and ad campaigns.</p>
+      </div>
+      <div class="category-card" data-category="app-development">
+        <div class="icon">📱</div>
+        <h3>App Development</h3>
+        <p>Android, iOS and cross-platform apps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How FreelanceHub Works ===== -->
+  <section class="section container" id="how-it-works">
+    <div class="section-head">
+      <h2>How FreelanceHub works</h2>
+      <p>Three steps to get a project moving, whichever side you're on.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Create your account</h3>
+        <p>Sign up as a client to post work, or as a freelancer to build a profile and showcase your skills.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Post or apply</h3>
+        <p>Clients post jobs with a clear budget and deadline. Freelancers browse jobs and send proposals.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Work and get paid</h3>
+        <p>Collaborate through the platform, track progress on your dashboard, and complete the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why Choose Us ===== -->
+  <section class="section container" id="about">
+    <div class="section-head">
+      <h2>Why choose FreelanceHub</h2>
+      <p>Built around the things that actually make freelance hiring work.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div>
+          <h3>Verified profiles</h3>
+          <p>Every freelancer profile shows real ratings and completed project counts.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div>
+          <h3>Transparent pricing</h3>
+          <p>Hourly rates and job budgets are visible upfront — no hidden negotiation.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div>
+          <h3>Built for both sides</h3>
+          <p>Dashboards for clients tracking jobs and freelancers tracking proposals.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div>
+          <h3>Simple, focused tools</h3>
+          <p>No clutter — just search, post, apply and hire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Call to Action ===== -->
+  <section class="section">
+    <div class="cta-section">
+      <h2>Ready to get your project started?</h2>
+      <p>Join thousands of clients and freelancers already working together on FreelanceHub.</p>
+      <div class="cta-actions">
+        <a href="register.html" class="btn btn-gold">Sign Up Free</a>
+        <a href="post-job.html" class="btn btn-outline" style="border-color:#3A4468; color:#fff;">Post a Job</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Freelance<span>Hub</span></div>
+          <p>A marketplace connecting skilled freelancers with clients who need great work done.</p>
+        </div>
+        <div>
+          <h4>For Clients</h4>
+          <ul>
+            <li><a href="freelancers.html">Find Freelancers</a></li>
+            <li><a href="post-job.html">Post a Job</a></li>
+            <li><a href="register.html">Create Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>For Freelancers</h4>
+          <ul>
+            <li><a href="jobs.html">Find Jobs</a></li>
+            <li><a href="register.html">Join as Freelancer</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 FreelanceHub. College project prototype.</span>
+        <span>Built with HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

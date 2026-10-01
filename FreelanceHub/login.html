@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — FreelanceHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="freelancers.html">Find Freelancers</a></li>
+        <li><a href="jobs.html">Find Jobs</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <a href="register.html" class="btn btn-gold btn-sm">Sign Up</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <section class="auth-page container">
+    <form id="loginForm" class="form-wrap narrow" novalidate>
+      <div class="section-head text-center" style="margin-bottom:28px;">
+        <h2>Welcome back</h2>
+        <p>Log in to manage your jobs, proposals and profile.</p>
+      </div>
+
+      <div class="field" id="loginEmailField">
+        <label for="loginEmail">Email address</label>
+        <input type="email" id="loginEmail" placeholder="you@example.com" />
+        <div class="field-error">Please enter a valid email address.</div>
+      </div>
+
+      <div class="field" id="loginPasswordField">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password" />
+        <div class="field-error">Password must be at least 6 characters.</div>
+      </div>
+
+      <div class="form-foot-row">
+        <label class="checkbox-row">
+          <input type="checkbox" id="rememberMe" />
+          Remember me
+        </label>
+        <a href="#" class="btn-text" style="padding:0;">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn btn-gold btn-block">Login</button>
+
+      <p class="form-foot-text">Don't have an account? <a href="register.html">Sign up here</a></p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <span>&copy; 2026 FreelanceHub. College project prototype.</span>
+        <span>Built with HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

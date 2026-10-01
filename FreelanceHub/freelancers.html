@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Freelancers — FreelanceHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="freelancers.html" class="active">Find Freelancers</a></li>
+        <li><a href="jobs.html">Find Jobs</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <a href="register.html" class="btn btn-gold btn-sm">Sign Up</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <section class="section container">
+    <div class="section-head">
+      <h2>Find freelancers</h2>
+      <p>Search by name or skill, or narrow results using the filters below.</p>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" id="freelancerSearch" placeholder="Search by name or skill..." />
+      <select id="categoryFilter">
+        <option value="all">All categories</option>
+        <option value="web-development">Web Development</option>
+        <option value="graphic-design">Graphic Design</option>
+        <option value="content-writing">Content Writing</option>
+        <option value="ui-ux-design">UI/UX Design</option>
+        <option value="digital-marketing">Digital Marketing</option>
+        <option value="app-development">App Development</option>
+      </select>
+      <select id="skillFilter">
+        <option value="all">All skills</option>
+        <option value="react">React</option>
+        <option value="figma">Figma</option>
+        <option value="seo">SEO</option>
+        <option value="node">Node.js</option>
+        <option value="flutter">Flutter</option>
+        <option value="copywriting">Copywriting</option>
+      </select>
+    </div>
+
+    <p class="results-count" id="resultsCount">8 freelancers found</p>
+
+    <div class="grid" id="freelancerGrid">
+
+      <div class="card" data-category="web-development" data-skills="React, Node.js, MongoDB" data-name="Rahul Mehta">
+        <div class="card-head">
+          <div class="avatar ink">RM</div>
+          <div><strong>Rahul Mehta</strong><span>Full-Stack Developer</span></div>
+        </div>
+        <div class="rating">&#9733; 4.9 (112 reviews)</div>
+        <div>
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+        </div>
+        <div class="card-meta">
+          <div><strong>96</strong>Projects done</div>
+          <div><strong>$28/hr</strong>Hourly rate</div>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Profile</a>
+          <button class="btn btn-teal hire-btn">Hire</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="ui-ux-design" data-skills="Figma, Design Systems, Prototyping" data-name="Aisha Rahman">
+        <div class="card-head">
+          <div class="avatar teal">AR</div>
+          <div><strong>Aisha Rahman</strong><span>UI/UX Designer</span></div>
+        </div>
+        <div class="rating">&#9733; 4.8 (89 reviews)</div>
+        <div>
+          <span class="tag">Figma</span><span class="tag">Design Systems</span><span class="tag">Prototyping</span>
+        </div>
+        <div class="card-meta">
+          <div><strong>64</strong>Projects done</div>
+          <div><strong>$32/hr</strong>Hourly rate</div>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Profile</a>
+          <button class="btn btn-teal hire-btn">Hire</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="content-writing" data-skills="Copywriting, SEO, Blogging" data-name="Priya Nair">
+        <div class="card-head">
+          <div class="avatar gold">PN</div>
+          <div><strong>Priya Nair</strong><span>Content Writer</span></div>
+        </div>
+        <div class="rating">&#9733; 4.7 (54 reviews)</div>
+        <div>
+          <span class="tag">Copywriting</span><span class="tag">SEO</span><span class="tag">Blogging</span>
+        </div>
+        <div class="card-meta">
+          <div><strong>41</strong>Projects done</div>
+          <div><strong>$18/hr</strong>Hourly rate</div>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Profile</a>
+          <button class="btn btn-teal hire-btn">Hire</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="graphic-design" data-skills="Illustrator, Branding, Logo Design" data-name="Karan Verma">
+        <div class="card-head">
+          <div class="avatar ink">KV</div>
+          <div><strong>Karan Verma</strong><span>Graphic Designer</span></div>
+        </div>
+        <div class="rating">&#9733; 4.9 (76 reviews)</div>
+        <div>
+          <span class="tag">Illustrator</span><span class="tag">Branding</span><span class="tag">Logo Design</span>
+        </div>
+        <div class="card-meta">
+          <div><strong>58</strong>Projects done</div>
+          <div><strong>$22/hr</strong>Hourly rate</div>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Profile</a>
+          <button class="btn btn-teal hire-btn">Hire</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="digital-marketing" data-skills="SEO, Google Ads, Social Media" data-name="Sneha Kapoor">
+        <div class="card-head">
+          <div class="avatar teal">SK</div>
+          <div><strong>Sneha Kapoor</strong><span>Digital Marketer</span></div>
+        </div>
+        <div class="rating">&#9733; 4.6 (43 reviews)</div>
+        <div>
+          <span class="tag">SEO</span><span class="tag">Google Ads</span><span class="tag">Social Media</span>
+        </div>
+        <div class="card-meta">
+          <div><strong>37</strong>Projects done</div>
+          <div><strong>$20/hr</strong>Hourly rate</div>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Profile</a>
+          <button class="btn btn-teal hire-btn">Hire</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="app-development" data-skills="Flutter, Dart, Firebase" data-name="Arjun Singh">
+        <div class="card-head">
+          <div class="avatar gold">AS</div>
+          <div><strong>Arjun Singh</strong><span>App Developer</span></div>
+        </div>
+        <div class="rating">&#9733; 4.8 (67 reviews)</div>
+        <div>
+          <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span>
+        </div>
+        <div class="card-meta">
+          <div><strong>45</strong>Projects done</div>
+          <div><strong>$26/hr</strong>Hourly rate</div>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Profile</a>
+          <button class="btn btn-teal hire-btn">Hire</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="web-development" data-skills="WordPress, PHP, MySQL" data-name="Meera Iyer">
+        <div class="card-head">
+          <div class="avatar ink">MI</div>
+          <div><strong>Meera Iyer</strong><span>Web Developer</span></div>
+        </div>
+        <div class="rating">&#9733; 4.7 (58 reviews)</div>
+        <div>
+          <span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+        </div>
+        <div class="card-meta">
+          <div><strong>52</strong>Projects done</div>
+          <div><strong>$19/hr</strong>Hourly rate</div>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Profile</a>
+          <button class="btn btn-teal hire-btn">Hire</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="ui-ux-design" data-skills="Sketch, Wireframing, User Research" data-name="Devika Rao">
+        <div class="card-head">
+          <div class="avatar teal">DR</div>
+          <div><strong>Devika Rao</strong><span>Product Designer</span></div>
+        </div>
+        <div class="rating">&#9733; 4.9 (91 reviews)</div>
+        <div>
+          <span class="tag">Sketch</span><span class="tag">Wireframing</span><span class="tag">User Research</span>
+        </div>
+        <div class="card-meta">
+          <div><strong>70</strong>Projects done</div>
+          <div><strong>$30/hr</strong>Hourly rate</div>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Profile</a>
+          <button class="btn btn-teal hire-btn">Hire</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Freelance<span>Hub</span></div>
+          <p>A marketplace connecting skilled freelancers with clients who need great work done.</p>
+        </div>
+        <div>
+          <h4>For Clients</h4>
+          <ul>
+            <li><a href="freelancers.html">Find Freelancers</a></li>
+            <li><a href="post-job.html">Post a Job</a></li>
+            <li><a href="register.html">Create Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>For Freelancers</h4>
+          <ul>
+            <li><a href="jobs.html">Find Jobs</a></li>
+            <li><a href="register.html">Join as Freelancer</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 FreelanceHub. College project prototype.</span>
+        <span>Built with HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

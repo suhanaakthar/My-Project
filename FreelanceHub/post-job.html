@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post a Job — FreelanceHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="freelancers.html">Find Freelancers</a></li>
+        <li><a href="jobs.html">Find Jobs</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <a href="register.html" class="btn btn-gold btn-sm">Sign Up</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <section class="section container">
+    <div class="section-head text-center">
+      <h2>Post a job</h2>
+      <p>Describe what you need done, and freelancers will start sending proposals.</p>
+    </div>
+
+    <form id="postJobForm" class="form-wrap" novalidate>
+
+      <div class="field" id="jobTitleField">
+        <label for="jobTitle">Job title</label>
+        <input type="text" id="jobTitle" placeholder="e.g. Build a responsive landing page" />
+        <div class="field-error">Please enter a job title (at least 4 characters).</div>
+      </div>
+
+      <div class="field" id="jobDescriptionField">
+        <label for="jobDescription">Job description</label>
+        <textarea id="jobDescription" placeholder="Describe the project, goals and any specific requirements..."></textarea>
+        <div class="field-error">Please add a description of at least 20 characters.</div>
+      </div>
+
+      <div class="field-row">
+        <div class="field" id="jobCategoryField">
+          <label for="jobCategory">Category</label>
+          <select id="jobCategory">
+            <option value="">Select a category</option>
+            <option value="web-development">Web Development</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="content-writing">Content Writing</option>
+            <option value="ui-ux-design">UI/UX Design</option>
+            <option value="digital-marketing">Digital Marketing</option>
+            <option value="app-development">App Development</option>
+          </select>
+          <div class="field-error">Please select a category.</div>
+        </div>
+
+        <div class="field" id="jobSkillsField">
+          <label for="jobSkills">Required skills</label>
+          <input type="text" id="jobSkills" placeholder="e.g. HTML, CSS, JavaScript" />
+          <div class="field-error">Please list at least one skill.</div>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field" id="jobBudgetField">
+          <label for="jobBudget">Budget (USD)</label>
+          <input type="number" id="jobBudget" placeholder="e.g. 300" min="1" />
+          <div class="field-error">Please enter a budget greater than 0.</div>
+        </div>
+
+        <div class="field" id="jobDeadlineField">
+          <label for="jobDeadline">Deadline</label>
+          <input type="date" id="jobDeadline" />
+          <div class="field-error">Please choose a deadline.</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="jobExperience">Experience level</label>
+        <select id="jobExperience">
+          <option value="entry">Entry level</option>
+          <option value="intermediate" selected>Intermediate</option>
+          <option value="expert">Expert</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-gold btn-block">Post Job</button>
+    </form>
+
+    <div class="form-wrap success-panel" id="postJobSuccess">
+      <div class="icon-circle">&#10003;</div>
+      <h2>Job posted successfully!</h2>
+      <p>Freelancers can now see your job and start sending proposals. You can track responses from your dashboard.</p>
+      <div class="cta-actions" style="justify-content:center;">
+        <a href="dashboard.html" class="btn btn-primary">Go to Dashboard</a>
+        <button id="postAnotherBtn" class="btn btn-outline">Post Another Job</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Freelance<span>Hub</span></div>
+          <p>A marketplace connecting skilled freelancers with clients who need great work done.</p>
+        </div>
+        <div>
+          <h4>For Clients</h4>
+          <ul>
+            <li><a href="freelancers.html">Find Freelancers</a></li>
+            <li><a href="post-job.html">Post a Job</a></li>
+            <li><a href="register.html">Create Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>For Freelancers</h4>
+          <ul>
+            <li><a href="jobs.html">Find Jobs</a></li>
+            <li><a href="register.html">Join as Freelancer</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 FreelanceHub. College project prototype.</span>
+        <span>Built with HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

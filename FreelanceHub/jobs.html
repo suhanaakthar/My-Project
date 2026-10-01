@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Jobs — FreelanceHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="freelancers.html">Find Freelancers</a></li>
+        <li><a href="jobs.html" class="active">Find Jobs</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <a href="register.html" class="btn btn-gold btn-sm">Sign Up</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <section class="section container">
+    <div class="section-head">
+      <h2>Find jobs</h2>
+      <p>Browse open jobs posted by clients and send a proposal.</p>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" id="jobSearch" placeholder="Search jobs by title..." />
+      <select id="jobCategoryFilter">
+        <option value="all">All categories</option>
+        <option value="web-development">Web Development</option>
+        <option value="graphic-design">Graphic Design</option>
+        <option value="content-writing">Content Writing</option>
+        <option value="ui-ux-design">UI/UX Design</option>
+        <option value="digital-marketing">Digital Marketing</option>
+        <option value="app-development">App Development</option>
+      </select>
+    </div>
+
+    <p class="results-count" id="jobResultsCount">6 jobs found</p>
+
+    <div class="grid" id="jobGrid">
+
+      <div class="card job-card" data-category="web-development" data-title="Responsive Landing Page for SaaS Product">
+        <div class="job-card-top">
+          <h3>Responsive Landing Page for SaaS Product</h3>
+          <span class="job-budget">$250–$400</span>
+        </div>
+        <p class="desc">Need a clean, responsive landing page built from an existing Figma design. Must work well on mobile.</p>
+        <div class="job-skills">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <div class="job-card-footer">
+          <span>Posted 2 days ago</span>
+          <span>14 proposals</span>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Job</a>
+          <button class="btn btn-teal apply-btn">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="card job-card" data-category="ui-ux-design" data-title="Mobile App UI Redesign">
+        <div class="job-card-top">
+          <h3>Mobile App UI Redesign</h3>
+          <span class="job-budget">$500–$800</span>
+        </div>
+        <p class="desc">Looking for a designer to refresh the UI of a fitness tracking app — 12 screens, Figma file provided.</p>
+        <div class="job-skills">
+          <span class="tag">Figma</span><span class="tag">Mobile UI</span>
+        </div>
+        <div class="job-card-footer">
+          <span>Posted 5 days ago</span>
+          <span>9 proposals</span>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Job</a>
+          <button class="btn btn-teal apply-btn">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="card job-card" data-category="content-writing" data-title="10 SEO Blog Articles on Personal Finance">
+        <div class="job-card-top">
+          <h3>10 SEO Blog Articles on Personal Finance</h3>
+          <span class="job-budget">$150–$300</span>
+        </div>
+        <p class="desc">Need well-researched, SEO-friendly blog posts of 1000+ words each on personal finance topics.</p>
+        <div class="job-skills">
+          <span class="tag">SEO Writing</span><span class="tag">Research</span>
+        </div>
+        <div class="job-card-footer">
+          <span>Posted 1 day ago</span>
+          <span>21 proposals</span>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Job</a>
+          <button class="btn btn-teal apply-btn">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="card job-card" data-category="app-development" data-title="Cross-Platform Grocery Delivery App">
+        <div class="job-card-top">
+          <h3>Cross-Platform Grocery Delivery App</h3>
+          <span class="job-budget">$1200–$2000</span>
+        </div>
+        <p class="desc">Build a Flutter app with order tracking, push notifications and a payment gateway integration.</p>
+        <div class="job-skills">
+          <span class="tag">Flutter</span><span class="tag">Firebase</span>
+        </div>
+        <div class="job-card-footer">
+          <span>Posted 3 days ago</span>
+          <span>6 proposals</span>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Job</a>
+          <button class="btn btn-teal apply-btn">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="card job-card" data-category="graphic-design" data-title="Brand Identity for a Coffee Shop">
+        <div class="job-card-top">
+          <h3>Brand Identity for a Coffee Shop</h3>
+          <span class="job-budget">$200–$350</span>
+        </div>
+        <p class="desc">Logo, color palette and packaging design for a new coffee shop opening next month.</p>
+        <div class="job-skills">
+          <span class="tag">Branding</span><span class="tag">Illustrator</span>
+        </div>
+        <div class="job-card-footer">
+          <span>Posted 6 days ago</span>
+          <span>17 proposals</span>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Job</a>
+          <button class="btn btn-teal apply-btn">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="card job-card" data-category="digital-marketing" data-title="Instagram Growth Campaign for D2C Brand">
+        <div class="job-card-top">
+          <h3>Instagram Growth Campaign for D2C Brand</h3>
+          <span class="job-budget">$300–$500</span>
+        </div>
+        <p class="desc">Plan and run a 1-month content and ad campaign to grow followers and drive sales.</p>
+        <div class="job-skills">
+          <span class="tag">Social Media</span><span class="tag">Meta Ads</span>
+        </div>
+        <div class="job-card-footer">
+          <span>Posted 4 days ago</span>
+          <span>11 proposals</span>
+        </div>
+        <div class="card-actions">
+          <a href="profile.html" class="btn btn-outline">View Job</a>
+          <button class="btn btn-teal apply-btn">Apply Now</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Freelance<span>Hub</span></div>
+          <p>A marketplace connecting skilled freelancers with clients who need great work done.</p>
+        </div>
+        <div>
+          <h4>For Clients</h4>
+          <ul>
+            <li><a href="freelancers.html">Find Freelancers</a></li>
+            <li><a href="post-job.html">Post a Job</a></li>
+            <li><a href="register.html">Create Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>For Freelancers</h4>
+          <ul>
+            <li><a href="jobs.html">Find Jobs</a></li>
+            <li><a href="register.html">Join as Freelancer</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 FreelanceHub. College project prototype.</span>
+        <span>Built with HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
