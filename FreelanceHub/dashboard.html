@@ -1,152 +1,624 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
   <title>Dashboard — FreelanceHub</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  />
+
 </head>
+
+
 <body>
 
+
+  <!-- NAVBAR -->
+
   <nav class="navbar">
+
     <div class="nav-inner">
-      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+
+      <a
+        href="index.html"
+        class="logo"
+      >
+        Freelance<span>Hub</span>
+      </a>
+
+
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="freelancers.html">Find Freelancers</a></li>
-        <li><a href="jobs.html">Find Jobs</a></li>
-        <li><a href="index.html#about">About</a></li>
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="freelancers.html">
+            Find Freelancers
+          </a>
+        </li>
+
+        <li>
+          <a href="jobs.html">
+            Find Jobs
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#about">
+            About
+          </a>
+        </li>
+
       </ul>
+
+
       <div class="nav-actions">
-        <a href="dashboard.html" class="btn btn-outline btn-sm">Dashboard</a>
-        <div class="avatar ink" style="width:36px;height:36px;font-size:0.85rem;">RM</div>
+
+        <a
+          href="dashboard.html"
+          class="btn btn-outline btn-sm"
+        >
+          Dashboard
+        </a>
+
+
+        <!-- CLICKABLE PROFILE -->
+
+        <a
+          href="profile.html"
+          title="View Profile"
+          style="text-decoration:none;"
+        >
+
+          <div
+            id="profileAvatar"
+            class="avatar ink"
+            style="
+              width:36px;
+              height:36px;
+              font-size:0.85rem;
+              cursor:pointer;
+            "
+          >
+            U
+          </div>
+
+        </a>
+
       </div>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle menu"
+      >
+        &#9776;
+      </button>
+
     </div>
+
   </nav>
+
+
+
+  <!-- DASHBOARD -->
 
   <section class="section container">
 
+
+    <!-- WELCOME -->
+
     <div class="dash-welcome">
+
       <div>
-        <h1>Welcome back, Rahul</h1>
-        <p>Here's what's happening with your account today.</p>
+
+        <h1>
+          Welcome back,
+          <span id="userName">
+            User
+          </span>
+        </h1>
+
+        <p>
+          Here's what's happening with your account today.
+        </p>
+
       </div>
-      <a href="post-job.html" class="btn btn-gold">Post a New Job</a>
+
+
+      <a
+        href="post-job.html"
+        class="btn btn-gold"
+      >
+        Post a New Job
+      </a>
+
     </div>
 
+
+
+    <!-- STATS -->
+
     <div class="dash-stats">
+
       <div class="dash-stat">
         <strong>3</strong>
         <span>Active jobs</span>
       </div>
+
       <div class="dash-stat">
         <strong>7</strong>
         <span>Applied jobs</span>
       </div>
+
       <div class="dash-stat">
         <strong>5</strong>
         <span>Saved jobs</span>
       </div>
+
       <div class="dash-stat">
         <strong>2</strong>
         <span>New notifications</span>
       </div>
+
     </div>
 
+
+
+    <!-- COLUMNS -->
+
     <div class="dash-columns">
-      <div>
-        <div class="dash-panel">
-          <h2>Active jobs</h2>
-          <div class="dash-list-item">
-            <span>Responsive Landing Page for SaaS Product</span>
-            <span class="status active">In progress</span>
-          </div>
-          <div class="dash-list-item">
-            <span>Brand Identity for a Coffee Shop</span>
-            <span class="status active">In progress</span>
-          </div>
-          <div class="dash-list-item">
-            <span>10 SEO Blog Articles on Personal Finance</span>
-            <span class="status pending">Awaiting proposals</span>
-          </div>
-        </div>
 
-        <div class="dash-panel">
-          <h2>Applied jobs</h2>
-          <div class="dash-list-item">
-            <span>Mobile App UI Redesign</span>
-            <span class="status pending">Proposal sent</span>
-          </div>
-          <div class="dash-list-item">
-            <span>Cross-Platform Grocery Delivery App</span>
-            <span class="status pending">Proposal sent</span>
-          </div>
-          <div class="dash-list-item">
-            <span>Instagram Growth Campaign for D2C Brand</span>
-            <span class="status active">Shortlisted</span>
-          </div>
-        </div>
 
-        <div class="dash-panel">
-          <h2>Saved jobs</h2>
-          <div class="dash-list-item">
-            <span>Landing Page for a Fitness App</span>
-            <span class="status saved">Saved</span>
-          </div>
-          <div class="dash-list-item">
-            <span>Logo Design for a Bakery</span>
-            <span class="status saved">Saved</span>
-          </div>
-        </div>
-      </div>
+      <!-- LEFT COLUMN -->
 
       <div>
-        <div class="dash-panel">
-          <h2>Profile summary</h2>
-          <div class="side-stat"><span>Role</span><strong>Client</strong></div>
-          <div class="side-stat"><span>Member since</span><strong>2024</strong></div>
-          <div class="side-stat"><span>Jobs posted</span><strong>12</strong></div>
-          <div class="side-stat"><span>Rating given</span><strong>4.7</strong></div>
-        </div>
+
+
+        <!-- ACTIVE JOBS -->
 
         <div class="dash-panel">
-          <h2>Notifications</h2>
-          <div class="notification-item">
-            <div class="notification-dot"></div>
-            <p>Aisha Rahman sent a proposal for "Mobile App UI Redesign".</p>
+
+          <h2>
+            Active jobs
+          </h2>
+
+
+          <div class="dash-list-item">
+
+            <span>
+              Responsive Landing Page for SaaS Product
+            </span>
+
+            <span class="status active">
+              In progress
+            </span>
+
           </div>
-          <div class="notification-item">
-            <div class="notification-dot"></div>
-            <p>Your job "Brand Identity for a Coffee Shop" received 3 new proposals.</p>
+
+
+          <div class="dash-list-item">
+
+            <span>
+              Brand Identity for a Coffee Shop
+            </span>
+
+            <span class="status active">
+              In progress
+            </span>
+
           </div>
+
+
+          <div class="dash-list-item">
+
+            <span>
+              10 SEO Blog Articles on Personal Finance
+            </span>
+
+            <span class="status pending">
+              Awaiting proposals
+            </span>
+
+          </div>
+
         </div>
 
+
+
+        <!-- APPLIED JOBS -->
+
         <div class="dash-panel">
-          <h2>Recent activity</h2>
-          <div class="notification-item">
-            <div class="notification-dot"></div>
-            <p>You hired Rahul Mehta for "Landing Page Build".</p>
+
+          <h2>
+            Applied jobs
+          </h2>
+
+
+          <div class="dash-list-item">
+
+            <span>
+              Mobile App UI Redesign
+            </span>
+
+            <span class="status pending">
+              Proposal sent
+            </span>
+
           </div>
-          <div class="notification-item">
-            <div class="notification-dot"></div>
-            <p>You posted a new job: "10 SEO Blog Articles on Personal Finance".</p>
+
+
+          <div class="dash-list-item">
+
+            <span>
+              Cross-Platform Grocery Delivery App
+            </span>
+
+            <span class="status pending">
+              Proposal sent
+            </span>
+
           </div>
+
+
+          <div class="dash-list-item">
+
+            <span>
+              Instagram Growth Campaign for D2C Brand
+            </span>
+
+            <span class="status active">
+              Shortlisted
+            </span>
+
+          </div>
+
         </div>
+
+
+
+        <!-- SAVED JOBS -->
+
+        <div class="dash-panel">
+
+          <h2>
+            Saved jobs
+          </h2>
+
+
+          <div class="dash-list-item">
+
+            <span>
+              Landing Page for a Fitness App
+            </span>
+
+            <span class="status saved">
+              Saved
+            </span>
+
+          </div>
+
+
+          <div class="dash-list-item">
+
+            <span>
+              Logo Design for a Bakery
+            </span>
+
+            <span class="status saved">
+              Saved
+            </span>
+
+          </div>
+
+        </div>
+
       </div>
+
+
+
+      <!-- RIGHT COLUMN -->
+
+      <div>
+
+
+        <!-- PROFILE SUMMARY -->
+
+        <div class="dash-panel">
+
+          <h2>
+            Profile summary
+          </h2>
+
+
+          <div class="side-stat">
+
+            <span>
+              Name
+            </span>
+
+            <strong id="profileName">
+              User
+            </strong>
+
+          </div>
+
+
+          <div class="side-stat">
+
+            <span>
+              Role
+            </span>
+
+            <strong>
+              Client
+            </strong>
+
+          </div>
+
+
+          <div class="side-stat">
+
+            <span>
+              Member since
+            </span>
+
+            <strong>
+              2026
+            </strong>
+
+          </div>
+
+
+          <div class="side-stat">
+
+            <span>
+              Jobs posted
+            </span>
+
+            <strong>
+              12
+            </strong>
+
+          </div>
+
+
+          <div class="side-stat">
+
+            <span>
+              Rating given
+            </span>
+
+            <strong>
+              4.7
+            </strong>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- NOTIFICATIONS -->
+
+        <div class="dash-panel">
+
+          <h2>
+            Notifications
+          </h2>
+
+
+          <div class="notification-item">
+
+            <div class="notification-dot"></div>
+
+            <p>
+              Aisha Rahman sent a proposal for
+              "Mobile App UI Redesign".
+            </p>
+
+          </div>
+
+
+          <div class="notification-item">
+
+            <div class="notification-dot"></div>
+
+            <p>
+              Your job "Brand Identity for a Coffee Shop"
+              received 3 new proposals.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- RECENT ACTIVITY -->
+
+        <div class="dash-panel">
+
+          <h2>
+            Recent activity
+          </h2>
+
+
+          <div class="notification-item">
+
+            <div class="notification-dot"></div>
+
+            <p>
+              You hired Rahul Mehta for
+              "Landing Page Build".
+            </p>
+
+          </div>
+
+
+          <div class="notification-item">
+
+            <div class="notification-dot"></div>
+
+            <p>
+              You posted a new job:
+              "10 SEO Blog Articles on Personal Finance".
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
   </section>
 
+
+
+  <!-- FOOTER -->
+
   <footer class="site-footer">
+
     <div class="container">
-      <div class="footer-bottom" style="border-top:none; padding-top:0;">
-        <span>&copy; 2026 FreelanceHub. College project prototype.</span>
-        <span>Built with HTML, CSS &amp; JavaScript</span>
+
+      <div
+        class="footer-bottom"
+        style="
+          border-top:none;
+          padding-top:0;
+        "
+      >
+
+        <span>
+          &copy; 2026 FreelanceHub.
+          College project prototype.
+        </span>
+
+        <span>
+          Built with HTML, CSS &amp; JavaScript
+        </span>
+
       </div>
+
     </div>
+
   </footer>
 
+
+
+  <!-- USER SCRIPT -->
+
+  <script>
+
+    /*
+      READ CURRENT USER
+    */
+
+    const savedUser =
+      localStorage.getItem("currentUser");
+
+
+    /*
+      IF THERE IS NO LOGIN,
+      GO BACK TO LOGIN
+    */
+
+    if (!savedUser) {
+
+      window.location.href =
+        "login.html";
+
+    } else {
+
+      const user =
+        JSON.parse(savedUser);
+
+
+      /*
+        GET USER NAME
+      */
+
+      const name =
+        user.name.trim();
+
+
+      /*
+        SHOW NAME IN WELCOME MESSAGE
+      */
+
+      document.getElementById(
+        "userName"
+      ).textContent = name;
+
+
+      /*
+        SHOW NAME IN PROFILE SUMMARY
+      */
+
+      document.getElementById(
+        "profileName"
+      ).textContent = name;
+
+
+      /*
+        CREATE PROFILE INITIALS
+      */
+
+      const nameParts =
+        name.split(/\s+/);
+
+
+      let initials =
+        nameParts[0]
+          .charAt(0)
+          .toUpperCase();
+
+
+      if (nameParts.length > 1) {
+
+        initials +=
+          nameParts[
+            nameParts.length - 1
+          ]
+          .charAt(0)
+          .toUpperCase();
+
+      }
+
+
+      /*
+        SHOW INITIALS
+      */
+
+      document.getElementById(
+        "profileAvatar"
+      ).textContent = initials;
+
+    }
+
+  </script>
+
+
   <script src="js/script.js"></script>
+
 </body>
+
 </html>
+```
