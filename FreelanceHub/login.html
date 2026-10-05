@@ -1,72 +1,348 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Login — FreelanceHub</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar">
+
     <div class="nav-inner">
-      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+
+      <a href="index.html" class="logo">
+        Freelance<span>Hub</span>
+      </a>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="freelancers.html">Find Freelancers</a></li>
         <li><a href="jobs.html">Find Jobs</a></li>
         <li><a href="index.html#about">About</a></li>
       </ul>
+
       <div class="nav-actions">
-        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
-        <a href="register.html" class="btn btn-gold btn-sm">Sign Up</a>
+        <a href="login.html" class="btn btn-outline btn-sm">
+          Login
+        </a>
+
+        <a href="register.html" class="btn btn-gold btn-sm">
+          Sign Up
+        </a>
       </div>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        &#9776;
+      </button>
+
     </div>
+
   </nav>
 
+
+  <!-- LOGIN -->
+
   <section class="auth-page container">
-    <form id="loginForm" class="form-wrap narrow" novalidate>
-      <div class="section-head text-center" style="margin-bottom:28px;">
+
+    <form
+      id="loginForm"
+      class="form-wrap narrow"
+    >
+
+      <div
+        class="section-head text-center"
+        style="margin-bottom:28px;"
+      >
+
         <h2>Welcome back</h2>
-        <p>Log in to manage your jobs, proposals and profile.</p>
+
+        <p>
+          Log in to manage your jobs, proposals and profile.
+        </p>
+
       </div>
 
-      <div class="field" id="loginEmailField">
-        <label for="loginEmail">Email address</label>
-        <input type="email" id="loginEmail" placeholder="you@example.com" />
-        <div class="field-error">Please enter a valid email address.</div>
+
+      <!-- NAME -->
+
+      <div class="field">
+
+        <label for="loginName">
+          Name
+        </label>
+
+        <input
+          type="text"
+          id="loginName"
+          placeholder="Enter your name"
+        >
+
       </div>
 
-      <div class="field" id="loginPasswordField">
-        <label for="loginPassword">Password</label>
-        <input type="password" id="loginPassword" placeholder="Enter your password" />
-        <div class="field-error">Password must be at least 6 characters.</div>
+
+      <!-- EMAIL -->
+
+      <div class="field">
+
+        <label for="loginEmail">
+          Email address
+        </label>
+
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="you@example.com"
+        >
+
       </div>
+
+
+      <!-- PASSWORD -->
+
+      <div class="field">
+
+        <label for="loginPassword">
+          Password
+        </label>
+
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Enter your password"
+        >
+
+      </div>
+
+
+      <!-- REMEMBER -->
 
       <div class="form-foot-row">
+
         <label class="checkbox-row">
-          <input type="checkbox" id="rememberMe" />
+
+          <input
+            type="checkbox"
+            id="rememberMe"
+          >
+
           Remember me
+
         </label>
-        <a href="#" class="btn-text" style="padding:0;">Forgot password?</a>
+
+        <a
+          href="#"
+          class="btn-text"
+          style="padding:0;"
+        >
+          Forgot password?
+        </a>
+
       </div>
 
-      <button type="submit" class="btn btn-gold btn-block">Login</button>
 
-      <p class="form-foot-text">Don't have an account? <a href="register.html">Sign up here</a></p>
+      <!-- LOGIN -->
+
+      <button
+        type="submit"
+        class="btn btn-gold btn-block"
+      >
+        Login
+      </button>
+
+
+      <p class="form-foot-text">
+
+        Don't have an account?
+
+        <a href="register.html">
+          Sign up here
+        </a>
+
+      </p>
+
     </form>
+
   </section>
 
+
+  <!-- FOOTER -->
+
   <footer class="site-footer">
+
     <div class="container">
-      <div class="footer-bottom" style="border-top:none; padding-top:0;">
-        <span>&copy; 2026 FreelanceHub. College project prototype.</span>
-        <span>Built with HTML, CSS &amp; JavaScript</span>
+
+      <div
+        class="footer-bottom"
+        style="
+          border-top:none;
+          padding-top:0;
+        "
+      >
+
+        <span>
+          &copy; 2026 FreelanceHub.
+          College project prototype.
+        </span>
+
+        <span>
+          Built with HTML, CSS &amp; JavaScript
+        </span>
+
       </div>
+
     </div>
+
   </footer>
 
-  <script src="js/script.js"></script>
+
+  <!-- LOGIN SCRIPT -->
+
+  <script>
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+
+        const form =
+          document.getElementById("loginForm");
+
+
+        form.addEventListener(
+          "submit",
+          function (event) {
+
+            event.preventDefault();
+
+
+            const name =
+              document
+                .getElementById("loginName")
+                .value
+                .trim();
+
+            const email =
+              document
+                .getElementById("loginEmail")
+                .value
+                .trim();
+
+            const password =
+              document
+                .getElementById("loginPassword")
+                .value;
+
+
+            /* CHECK NAME */
+
+            if (name === "") {
+
+              alert("Please enter your name.");
+
+              return;
+
+            }
+
+
+            /* CHECK EMAIL */
+
+            if (
+              email === "" ||
+              !email.includes("@")
+            ) {
+
+              alert("Please enter a valid email.");
+
+              return;
+
+            }
+
+
+            /* CHECK PASSWORD */
+
+            if (password.length < 6) {
+
+              alert(
+                "Password must be at least 6 characters."
+              );
+
+              return;
+
+            }
+
+
+            /* CREATE USER */
+
+            const user = {
+
+              name: name,
+
+              email: email,
+
+              password: password
+
+            };
+
+
+            /* SAVE USER */
+
+            localStorage.setItem(
+              "currentUser",
+              JSON.stringify(user)
+            );
+
+
+            localStorage.setItem(
+              "loggedInUser",
+              name
+            );
+
+
+            /* SAVE REMEMBERED EMAIL */
+
+            const remember =
+              document.getElementById(
+                "rememberMe"
+              ).checked;
+
+
+            if (remember) {
+
+              localStorage.setItem(
+                "rememberedEmail",
+                email
+              );
+
+            }
+
+
+            /* GO TO DASHBOARD */
+
+            window.location.assign(
+              "dashboard.html"
+            );
+
+          }
+        );
+
+      }
+    );
+
+  </script>
+
+
+  <!-- IMPORTANT:
+       DO NOT LOAD js/script.js ON THIS PAGE.
+       It may conflict with the login form. -->
+
 </body>
+
 </html>
+```
